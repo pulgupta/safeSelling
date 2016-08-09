@@ -1,0 +1,52 @@
+<web-app id="WebApp_ID" version="3.0"
+   xmlns="http://java.sun.com/xml/ns/javaee" 
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+   http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+
+   <display-name>Spring MVC Application</display-name>
+
+	<!--Configuration for dispatcher servlet -->
+   <servlet>
+      <servlet-name>safeSelling</servlet-name>
+      <servlet-class>
+         org.springframework.web.servlet.DispatcherServlet
+      </servlet-class>
+
+		<!--Passing the initiation parameters for servlet mapping file-->
+      <init-param>
+            <param-name>contextConfigLocation</param-name>
+            <param-value>/WEB-INF/safeSelling-servlet.xml</param-value>
+        </init-param>
+      <load-on-startup>1</load-on-startup>
+      
+      <!-- Multipart settings -->
+      <multipart-config>
+      	<location>E:\siteImages</location>
+      </multipart-config>
+   </servlet>
+
+	<!-- Servlet mapping for the dispatcher servlet -->
+   <servlet-mapping>
+      <servlet-name>safeSelling</servlet-name>
+      <url-pattern>/</url-pattern>
+   </servlet-mapping>
+
+  <filter>
+  <!-- springSecurityFilterChain is the name which the Delegating Filter Proxy will search for
+  and will create a springSecurityFilterChain bean. -->
+  <filter-name>springSecurityFilterChain</filter-name>
+  <filter-class>org.springframework.web.filter.DelegatingFilterProxy</filter-class>
+  </filter>
+  
+  <filter-mapping>
+		<filter-name>springSecurityFilterChain</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+	
+	<!-- A way to enable/disable spring profile -->
+  <context-param>
+	    <param-name>spring.profiles.active</param-name>
+	    <param-value>development</param-value>
+	</context-param>
+</web-app>

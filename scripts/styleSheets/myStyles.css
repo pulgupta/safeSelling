@@ -1,0 +1,26 @@
+@CHARSET "UTF-8";
+
+html, body, input, select, textarea {
+	font-size: 5.0em;
+}
+
+th, td {
+	padding: 15px;
+	vertical-align: top;
+}
+
+table-form {
+	border-collapse: collapse;
+	padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+.center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.list {
+	width: 60%;
+}
