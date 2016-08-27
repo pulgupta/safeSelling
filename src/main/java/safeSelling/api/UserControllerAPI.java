@@ -13,8 +13,9 @@ import safeSelling.User;
 public class UserControllerAPI {
 
 	/*
-	 * This method will be called from a generic web script page
-	 * This page will be server as the master page for the header of the website
+	 * This method will be called from a generic js script page
+	 * This page will serve as the master page for the header of the website
+	 * If the user is not found or is null we will assume that the user is not logged in 
 	 * */
 	@RequestMapping(method=RequestMethod.GET)
 	public static User getLoggedinUser(){

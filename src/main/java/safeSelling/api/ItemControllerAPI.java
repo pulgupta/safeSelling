@@ -41,6 +41,9 @@ public class ItemControllerAPI {
 		return item;
 	}
 	
+	//To catch all the exceptions we can create a method like this and can then 
+	//define the exceptions which we want to catch
+	//In this way again we can separate the normal business logic from the exceptions 
 	@ExceptionHandler(ItemNotFoundException.class)
 	@ResponseStatus(HttpStatus.NOT_FOUND)
 	public String itemNotFound(ItemNotFoundException e){

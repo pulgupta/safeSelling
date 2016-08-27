@@ -33,6 +33,10 @@ public class Item {
 	@ElementCollection
 	private List<String> tags;
 
+	//We can use element collection by creating a separate table for the same
+	//@ElementCollection
+	//@CollectionTable(name = "employee_courses", joinColumns = @JoinColumn(name = "idemployee"))
+	
 	//Visibility Level
 	//1-company
 	//2-other company

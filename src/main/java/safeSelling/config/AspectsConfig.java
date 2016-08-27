@@ -8,7 +8,7 @@ import org.springframework.context.annotation.EnableAspectJAutoProxy;
 import safeSelling.siteAspects.SiteLogger;
 
 @Configuration
-@EnableAspectJAutoProxy
+@EnableAspectJAutoProxy	 		//To enable aspect oriented programming
 @ComponentScan
 public class AspectsConfig {
 

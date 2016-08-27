@@ -1,5 +1,10 @@
 package safeSelling.api;
 
+/**
+ * Custom exception to handle if an element is not found
+ * @author pulgupta
+ *
+ */
 public class ItemNotFoundException extends RuntimeException{
 	/**
 	 * 
