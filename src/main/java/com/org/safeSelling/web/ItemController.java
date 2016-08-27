@@ -10,8 +10,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
-import com.org.safeSelling.Item;
-import com.org.safeSelling.data.ItemRepository;
+import com.org.safeSelling.dao.ItemRepository;
+import com.org.safeSelling.dto.Item;
 
 @Controller
 @RequestMapping("/items")

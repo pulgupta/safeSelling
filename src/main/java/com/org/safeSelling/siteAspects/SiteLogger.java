@@ -5,9 +5,9 @@ import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
 import org.aspectj.lang.annotation.Pointcut;
 
-import com.org.safeSelling.FilePicker;
-import com.org.safeSelling.Item;
-import com.org.safeSelling.User;
+import com.org.safeSelling.dto.FilePicker;
+import com.org.safeSelling.dto.Item;
+import com.org.safeSelling.dto.User;
 
 //One of the best use of Spring is to create Aspects
 //By using Aspects we can separate different concerns

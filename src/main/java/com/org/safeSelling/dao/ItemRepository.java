@@ -1,8 +1,8 @@
-package com.org.safeSelling.data;
+package com.org.safeSelling.dao;
 
 import java.util.List;
 
-import com.org.safeSelling.Item;
+import com.org.safeSelling.dto.Item;
 
 public interface ItemRepository {
 	

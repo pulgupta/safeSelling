@@ -9,8 +9,8 @@ import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 
-import com.org.safeSelling.User;
-import com.org.safeSelling.data.UserRepository;
+import com.org.safeSelling.dao.UserRepository;
+import com.org.safeSelling.dto.User;
 
 public class UserSecurityService implements UserDetailsService {
 

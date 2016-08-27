@@ -14,7 +14,7 @@ import org.springframework.security.config.annotation.web.configuration.EnableWe
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 //import org.springframework.security.crypto.password.StandardPasswordEncoder;
 
-import com.org.safeSelling.data.UserRepository;
+import com.org.safeSelling.dao.UserRepository;
 
 @Configuration
 @EnableWebSecurity

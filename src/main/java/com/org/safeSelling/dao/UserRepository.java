@@ -1,6 +1,6 @@
-package com.org.safeSelling.data;
+package com.org.safeSelling.dao;
 
-import com.org.safeSelling.User;
+import com.org.safeSelling.dto.User;
 
 public interface UserRepository {
 

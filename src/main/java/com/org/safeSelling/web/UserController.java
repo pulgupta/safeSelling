@@ -15,11 +15,11 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import com.org.safeSelling.FilePicker;
-import com.org.safeSelling.Item;
-import com.org.safeSelling.User;
-import com.org.safeSelling.data.ItemRepository;
-import com.org.safeSelling.data.UserRepository;
+import com.org.safeSelling.dao.ItemRepository;
+import com.org.safeSelling.dao.UserRepository;
+import com.org.safeSelling.dto.FilePicker;
+import com.org.safeSelling.dto.Item;
+import com.org.safeSelling.dto.User;
 
 import javax.imageio.ImageIO;
 import javax.validation.Valid;

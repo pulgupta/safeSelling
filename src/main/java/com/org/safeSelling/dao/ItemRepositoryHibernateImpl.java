@@ -1,4 +1,4 @@
-package com.org.safeSelling.data;
+package com.org.safeSelling.dao;
 
 import java.util.List;
 
@@ -10,7 +10,7 @@ import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.org.safeSelling.Item;
+import com.org.safeSelling.dto.Item;
 import com.org.safeSelling.util.StringConversions;
 
 @Primary 	// To tell spring that this is the primary bean to be used

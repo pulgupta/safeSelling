@@ -1,4 +1,4 @@
-package com.org.safeSelling;
+package com.org.safeSelling.dto;
 
 import org.springframework.web.multipart.MultipartFile;
 

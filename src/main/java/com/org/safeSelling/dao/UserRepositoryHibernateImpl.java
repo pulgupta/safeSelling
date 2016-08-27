@@ -1,4 +1,4 @@
-package com.org.safeSelling.data;
+package com.org.safeSelling.dao;
 
 import java.util.List;
 
@@ -11,7 +11,7 @@ import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Isolation;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.org.safeSelling.User;
+import com.org.safeSelling.dto.User;
 
 @Primary
 @Repository

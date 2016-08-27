@@ -8,7 +8,7 @@ import org.springframework.jmx.export.MBeanExporter;
 
 public class ManageConfig {
 	@Bean
-	public MBeanExporter mBeanExporter (com.org.safeSelling.User user) {
+	public MBeanExporter mBeanExporter (com.org.safeSelling.dto.User user) {
 		MBeanExporter exporter = new MBeanExporter();
 		Map<String, Object> beans = new HashMap<String, Object>();
 		beans.put("safeSelling:name=User", user);
