@@ -19,19 +19,18 @@ public class SiteLogger {
 	private static final Logger logger = Logger.getLogger(SiteLogger.class);
 	
 	//Point cut definition
-	//We will then attach advice with these pointcuts
-	@Pointcut("execution(* safeSelling.web.MainController.home(..))")
+	//We will then attach advice with these point cuts
+	@Pointcut("execution(* com.org.safeSelling.web.MainController.home(..))")
 	public void mainController(){}
 	
-	@Pointcut("execution(* safeSelling.web.UserController.processRegistration(safeSelling.User,..)) && args(user,..)")
+	@Pointcut("execution(* com.org.safeSelling.web.UserController.processRegistration(com.org.safeSelling.dto.User,..)) && args(user,..)")
 	public void userController(User user){}
 	
-	@Pointcut("execution(* safeSelling.web.UserController.addProfilePic(safeSelling.FilePicker)) && args(filePicker)")
+	@Pointcut("execution(* com.org.safeSelling.web.UserController.addProfilePic(com.org.safeSelling.dto.FilePicker)) && args(filePicker)")
 	public void saveProfilePic(FilePicker filePicker){}
 	
-	@Pointcut("execution(* safeSelling.web.ItemController.editItem(safeSelling.Item)) && args(item)")
+	@Pointcut("execution(* com.org.safeSelling.web.ItemController.editItem(com.org.safeSelling.dto.Item)) && args(item)")
 	public void updateItem(Item item){}
-	
 	
 	//defining aspects and linking them to the pointcuts defined above
 	@Before("mainController()")

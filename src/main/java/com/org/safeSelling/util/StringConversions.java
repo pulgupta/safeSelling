@@ -23,20 +23,4 @@ public class StringConversions {
 		}
 		return singleStr;
 	}
-
-	/*testing 
-
-	public static void main(String args[]){
-		String abc = "car;bike;autos;parts";
-		List<String> output = new ArrayList<String>();
-		output = stringToList(abc, ";");
-
-		for(String element : output){
-			System.out.println("This is " + element);
-		}
-
-		String result= listToString(output, ":");
-		System.out.println(result);
-	}
-	 */
 }
