@@ -14,7 +14,7 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 @ActiveProfiles("development")
 //Context Configurations should be pick up from the class path
 @ContextConfiguration(locations={"classpath:safeSelling/test/safeSelling-servlet.xml"}, 
-	classes={safeSelling.config.WebConfig.class, safeSelling.config.RootConfig.class
+	classes={com.org.safeSelling.config.WebConfig.class, com.org.safeSelling.config.RootConfig.class
 			})
 @RunWith(SpringJUnit4ClassRunner.class)
 public class TestController {
